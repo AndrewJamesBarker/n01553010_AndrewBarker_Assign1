@@ -26,8 +26,9 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
             /// <summary>
             /// user input determines how much thier webhosting bill based on increments of a fortnight,
             /// This only up to three fortnights because I wasn't sure how to do the math for any random user input
+            /// <param
             /// </summary>
-            /// <param name="id"></param>
+            /// <param name="id">user input denoting days elapsed since billing commenced</param>
             /// <returns>owed cummulative cost of web hosting based on fortnights</returns>
             /// <example>localhost:59957/api/hostingcost/3 -> 1 fortnight at $5.50 / FN = $5.50 CAD + HST 13 % = $0.72 CAD Total = $6.22 CAD. 
             /// </example>
@@ -50,5 +51,7 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
                 return "Congrats, you've unlocked free hosting!";
             }
         }
+
+
     }
 }

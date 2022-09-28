@@ -160,6 +160,7 @@
     <Compile Include="Controllers\GreetingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HostingCostController.cs" />
+    <Compile Include="Controllers\HostingCostMathController.cs" />
     <Compile Include="Controllers\NumberMachineController.cs" />
     <Compile Include="Controllers\SquareController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />

@@ -15,6 +15,8 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
         /// Takes user input integer and divides it by the square root of Ten plus Two. 
         /// It then multiplies everything by Two,
         /// and returns the answer as an integer.
+        /// <param name="id">user input integer</param>
+        /// <returns>squareroot of 12 divided by user input and multiplied by 2</returns>
         /// </summary>
         /// <example> localhost:59277/api/numbermachine/100 --> 57 </example>
         {
