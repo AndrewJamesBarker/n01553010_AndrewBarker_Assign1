@@ -34,7 +34,8 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
             ///<summary>using Get method, tries to calculate how many fortnights have transpired based on the user entering 
             ///a number denoting days elapsed.
             ///The purpose being to charge the correct fee including HST for web hosting
-            ///<param name="b">14 days, or a fornight</param>
+            ///<param name="id">user input number of days transpired</param>
+            ///<param name="b">14 days, or a fortnight</param>
             ///<param name="c">fortnight divided by user input</param>
             ///<param name="d">cost per fortnight</param>
             ///<param name="e">HST percentage</param>
