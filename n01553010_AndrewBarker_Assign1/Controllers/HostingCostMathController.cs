@@ -13,11 +13,11 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
         public string Get(int id)
         {
             ///this doesnt work right mathematically but i'm still proud of it, and feel like i'm close.//
-            ///
+            ///(edit, it works now. all i had to do was add 1 to my division calculating the amount of fortnights.)
             /// 
             ///I started by going through the examples in the 'microsoft numbers in C#' link you gave us, 
             ///and then tinkering with this problem in the codepen.
-            ///I used trial and error to find out what output would support me using integers, decimals and strings together. 
+            ///I used trial and error to find out what output would support my using integers, decimals and strings together. 
             ///Research/google/luck to find out about the little 'm' at the end of decimals.
             ///geeksforgeeks to find the right way to round (i scrolled until i saw a result with 2 decimal points, and it worked.
             ///
@@ -27,11 +27,7 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
             ///The last stage was just going through my variables and performing the equations in the right places,
             ///and concating with strings.
             ///
-            /// I just dont know how to get my equations to fall within the correct parameters. 
-            /// Right at the beginning I'm missing a step that will bump anything equal, or greater that an equal division up 
-            /// into the next fortnight. I think it's the modulus, but dont know how yet.
-            ///
-            ///<summary>using Get method, tries to calculate how many fortnights have transpired based on the user entering 
+            ///<summary>using Get method, calculates how many fortnights have transpired based on the user entering 
             ///a number denoting days elapsed.
             ///The purpose being to charge the correct fee including HST for web hosting
             ///<param name="id">user input number of days transpired</param>
@@ -42,14 +38,14 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
             ///<param name="f">total before rounded to 2 decimals</param>
             ///<param name="g">total rounded to 2 decimals</param>
             ///</summary>
-            ///<return>supposed to return fee of 5.50 per fortnight plus HST, concated within a string.
+            ///<return>returns fee of 5.50 per fortnight plus HST, concated within a string.
             ///</return>
             ///<example>GET localhost:59957/api/HostingCostMath/13 ->1 fortnight at $5.50 / FN = $5.50 CAD + HST 13 % = $0.72 CAD Total = $6.22 CAD 
             ///</example>
 
 
             int b = 14;
-            int c = id / b;
+            int c = id / b + 1;
             decimal d = 5.50m;
             decimal e = 0.13m;
             decimal f = c * d * e + d * c;
