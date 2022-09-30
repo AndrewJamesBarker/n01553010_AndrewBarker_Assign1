@@ -31,12 +31,12 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
             ///a number denoting days elapsed.
             ///The purpose being to charge the correct fee including HST for web hosting
             ///<param name="id">user input number of days transpired</param>
-            ///<param name="b">14 days, or a fortnight</param>
-            ///<param name="c">fortnight divided by user input</param>
-            ///<param name="d">cost per fortnight</param>
-            ///<param name="e">HST percentage</param>
-            ///<param name="f">total before rounded to 2 decimals</param>
-            ///<param name="g">total rounded to 2 decimals</param>
+            ///<param name="oneFNight">14 days, or a fortnight</param>
+            ///<param name="fNightCount">fortnight divided by user input +1 to push into next billing cycle</param>
+            ///<param name="fNightCost">cost per fortnight</param>
+            ///<param name="hST">HST percentage</param>
+            ///<param name="totalPreRound">total before rounded to 2 decimals</param>
+            ///<param name="total">total rounded to 2 decimals</param>
             ///</summary>
             ///<return>returns fee of 5.50 per fortnight plus HST, concated within a string.
             ///</return>
@@ -44,14 +44,15 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
             ///</example>
 
 
-            int b = 14;
-            int c = id / b + 1;
-            decimal d = 5.50m;
-            decimal e = 0.13m;
-            decimal f = c * d * e + d * c;
-            decimal g = Math.Round(f, 2);
-            return c + " fortnights at $" + d + "/FN = $" + c * d + " CAD " + "HST 13% = $" + Math.Round(c * d * e,2) + " CAD "
-            + "Total = $" + g + " CAD";
+            int oneFNight = 14;
+            int fNightCount = id / oneFNight + 1;
+            decimal fNightCost = 5.50m;
+            decimal hST = 0.13m;
+            decimal totalPreRound = fNightCount * fNightCost * hST + fNightCost * fNightCount;
+            decimal total = Math.Round(totalPreRound, 2);
+            return fNightCount + " fortnights at $" + fNightCost + "/FN = $" + fNightCount * fNightCost + " CAD " + "HST 13% = $" + 
+                Math.Round(fNightCount * fNightCost * hST,2) + " CAD "
+            + "Total = $" + total + " CAD";
         }
 
 
