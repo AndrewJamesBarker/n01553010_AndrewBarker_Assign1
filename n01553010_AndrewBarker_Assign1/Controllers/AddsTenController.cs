@@ -16,7 +16,7 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
         /// <param name="plusTen">adds ten to id</param>
         /// </summary>
         /// <returns>user input int plus ten</returns>
-        /// <example>localhost:59957/api/addten/3 --> 13 </example>
+        /// <example>localhost:59957/api/addten/get/3 --> 13 </example>
         
         {
             int plusTen = id + 10;

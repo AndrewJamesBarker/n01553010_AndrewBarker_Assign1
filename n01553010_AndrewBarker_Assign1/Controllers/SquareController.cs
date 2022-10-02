@@ -8,7 +8,7 @@ using System.Web.Http;
 namespace n01553010_AndrewBarker_Assign1.Controllers
 {
  
-    public class squareController : ApiController
+    public class SquareController : ApiController
     {
         public int GET(int id)
         /// <summary>
@@ -16,7 +16,7 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
         /// <param name="id">user input int</param>
         /// </summary>
         /// <returns>user input squared</returns>
-        /// <example>localhost:59957/api/square/10 --> 100</example>
+        /// <example>localhost:59957/api/square/get/10 --> 100</example>
         {
             int inputSquared = id * id;
             return inputSquared;

@@ -30,7 +30,7 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
             /// </summary>
             /// <param name="id">user input denoting days elapsed since billing commenced</param>
             /// <returns>owed cummulative cost of web hosting based on fortnights</returns>
-            /// <example>localhost:59957/api/hostingcost/3 -> 1 fortnight at $5.50 / FN = $5.50 CAD + HST 13 % = $0.72 CAD Total = $6.22 CAD. 
+            /// <example>localhost:59957/api/hostingcost/get/3 -> 1 fortnight at $5.50 / FN = $5.50 CAD + HST 13 % = $0.72 CAD Total = $6.22 CAD. 
             /// </example>
 
             if (id < 14)

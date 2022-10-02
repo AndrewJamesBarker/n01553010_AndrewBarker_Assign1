@@ -15,7 +15,7 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
         /// <param name="id"/>user input integer</param>
         /// </summary>
         /// <return>"greetings to id people!</return>
-        /// <example>localhost:59957/api/multigreeting/10 --> Greetings to 10 people!</example>
+        /// <example>localhost:59957/api/multigreeting/get/10 --> Greetings to 10 people!</example>
         {
             return "Greetings to " + id + " people!";
 

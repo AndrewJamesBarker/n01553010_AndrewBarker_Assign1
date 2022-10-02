@@ -40,7 +40,7 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
             ///</summary>
             ///<return>returns fee of 5.50 per fortnight plus HST, concated within a string.
             ///</return>
-            ///<example>GET localhost:59957/api/HostingCostMath/13 ->1 fortnight at $5.50 / FN = $5.50 CAD + HST 13 % = $0.72 CAD Total = $6.22 CAD 
+            ///<example>GET localhost:59957/api/HostingCostMath/get/13 ->1 fortnight at $5.50 / FN = $5.50 CAD + HST 13 % = $0.72 CAD Total = $6.22 CAD 
             ///</example>
 
 

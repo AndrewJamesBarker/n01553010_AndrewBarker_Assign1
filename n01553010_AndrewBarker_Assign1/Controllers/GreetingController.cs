@@ -16,7 +16,7 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
         /// POST request returns string "Hello World!"
         /// </summary>
         /// <return>"Hello World"</return>
-        /// <example> in command prompt: curl -d "" localhost:59277/api/Greeting -->"Hello World!"
+        /// <example> in command prompt: curl -d "" localhost:59277/api/post/Greeting -->"Hello World!"
         /// </example>
         {
             return "Hello World!";
