@@ -11,7 +11,9 @@ namespace n01553010_AndrewBarker_Assign1.Controllers
     {
         public int GET(int id)
         /// <summary>
-        /// Performs four mathematical operations on the users input.
+        /// Performs four mathematical operations on the users input. If this is not
+        ///the correct interpretation of the question, please see my alternate solution utilizing
+        /// web api config in my branch "differentApproaches'.
         /// Takes user input integer and divides it by the square root of Ten plus Two. 
         /// It then multiplies everything by Two,
         /// and returns the answer as an integer.
